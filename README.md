@@ -9,7 +9,7 @@ Please respect the principles of the palette in your contributions to establish 
 
 The principles include but are not limited to the following -
 
-- background and foreground blending for the worse
+- background and foreground mustn't blend for the worse
 - regular text should be expressed with: `$color12: #92d5e6;`
 - important keywords should be expressed with: `$color07: #bcff03;`
 
