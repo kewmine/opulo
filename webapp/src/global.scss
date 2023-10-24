@@ -12,7 +12,6 @@ html{
 }
 
 body {
-  overflow: hidden;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -64,6 +63,7 @@ a:hover, a:active {
 }
 
 section{
+  overflow: hidden;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   height: 100vh;
