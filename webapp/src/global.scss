@@ -1,0 +1,69 @@
+// palette
+@import "$lib/modules/theme";
+
+
+// "Roboto" 100 400
+// "IBM Plex Mono" 100 400
+// "Mooli" 400
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400&family=Mooli&family=Roboto:wght@100;400&display=swap');
+
+html{
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $fg_color;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.5vh;
+  margin: initial;
+
+
+  background: radial-gradient(circle, hsla(193, 37%, 20%, 1) 0%, $bg_color 99%);
+  background: -moz-radial-gradient(circle, hsla(193, 37%, 20%, 1) 0%, $bg_color 99%);
+  background: -webkit-radial-gradient(circle, hsla(193, 37%, 20%, 1) 0%, $bg_color 99%);
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #afafaf;
+
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+a:hover, a:active {
+  color: $clouds;
+}
+
+::-moz-selection {
+  color: $selection_fg_color;
+  background: $selection_bg_color;
+}
+
+::selection {
+  color: $selection_fg_color;
+  background: $selection_bg_color;
+}
+
+section{
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh
+}
